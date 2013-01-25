@@ -1,8 +1,8 @@
 /*
-Theme Name: ViNO
+Theme Name: Rönsy
 Author: Jesse Kuoppala / Kallo Works
 Author URI: http://www.jessekuoppala.com
-Description: ViNO yhdistykselle räätälöity responsiivinen teema.
+Description: ViNO yhdistykselle räätälöity responsiivinen teema Rönsy-lehteä varten.
 Version: 1.0
 */
 
@@ -118,10 +118,7 @@ body {
 	width: 69.30%;
 	margin-bottom: 19px;
 }
-.home #primary {
-	float: left;
-	width: 38.75%;
-}
+
 .left-divider {
 	margin-left: 28.55%;
 }
@@ -151,12 +148,12 @@ body {
 .page-template-page-sitemap-php  .entry-title,
 .green-header .entry-title,
 .page-title {
-	background: #40a43b; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#51bb4c, #40a43b);
-	background: -o-linear-gradient(#51bb4c, #40a43b);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#51bb4c), to(#40a43b)); /* older webkit syntax */
-	background: -webkit-linear-gradient(#51bb4c, #40a43b);
-	border: 1px solid #43a73e;
+	background: #87b43a; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#92bf47, #87b43a);
+	background: -o-linear-gradient(#92bf47, #87b43a);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#92bf47), to(#87b43a)); /* older webkit syntax */
+	background: -webkit-linear-gradient(#92bf47, #87b43a);
+	border: 1px solid #7cb125;
 	display: block;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 24px;
@@ -476,26 +473,18 @@ a.bullet:hover {
 	float: left;
 	padding: 29px 21px 32px 21px;
 }
-#join {
-	height: 100px;
-	width: 152px;
+#back-to-vino {
+	height: 94px;
+	width: 210px;
 	display: block;
-	background: url(images/liity.png) top left no-repeat;
+	background: url(images/back-to-vino.png) top left no-repeat;
 	margin: 26px 22px 0 0;
 	float: right;
 }
-#donate {
-	height: 92px;
-	width: 145px;
-	display: block;
-	background: url(images/lahjoita.png) top left no-repeat;
-	margin: 26px 14px 0 0;
-	float: right;
-}
-#join span,
-#donate span {
+#back-to-vino span {
 	display: none;
 }
+
 #title img {
 	width: auto;
 }
@@ -510,12 +499,12 @@ a.bullet:hover {
 -------------------------------------------------------------- */
 
 #access {
-	background: #e72b5a; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#ea3c67, #e72b5a);
-	background: -o-linear-gradient(#ea3c67, #e72b5a);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ea3c67), to(#e72b5a)); /* older webkit syntax */
-	background: -webkit-linear-gradient(#ea3c67, #e72b5a);
-	border: 1px solid #cf254f;
+	background: #ff6d00; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#ff9000, #ff6d00);
+	background: -o-linear-gradient(#ff9000, #ff6d00);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ff9000), to(#ff6d00)); /* older webkit syntax */
+	background: -webkit-linear-gradient(#ff9000, #ff6d00);
+	border: 1px solid #e56201;
 	display: block;
 	margin: 0 auto;
 	max-width: 958px;
@@ -688,13 +677,7 @@ a.bullet:hover {
 }
 .entry-title,
 .entry-header .entry-meta {}
-.home .entry-title {
-	clear: both;
-	color: #222;
-	font-size: 24px;
-	font-weight: normal;
-	line-height: 26px;
-}
+
 .entry-title,
 .entry-title a {
 	color: #222;
@@ -1709,12 +1692,12 @@ ul.xoxo {
 .widget-title,
 .whitebox header,
 #primary > header {
-	background: #40a43b; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#51bb4c, #40a43b);
-	background: -o-linear-gradient(#51bb4c, #40a43b);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#51bb4c), to(#40a43b)); /* older webkit syntax */
-	background: -webkit-linear-gradient(#51bb4c, #40a43b);
-	border: 1px solid #43a73e;
+	background: #87b43a; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#92bf47, #87b43a);
+	background: -o-linear-gradient(#92bf47, #87b43a);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#92bf47), to(#87b43a)); /* older webkit syntax */
+	background: -webkit-linear-gradient(#92bf47, #87b43a);
+	border: 1px solid #7cb125;
 	display: block;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 24px;
@@ -1879,7 +1862,7 @@ section.ephemera .entry-title a span {
 }
 .custom-links .link-image-wrapper img {
 	margin-top: -5px;
-	margin-left: 0px;
+	margin-left: -10px;
 	height: 70px;
 }
 .custom-links .link-image-wrapper.noimage img {
@@ -2225,8 +2208,8 @@ p.comment-form-comment {
 	clear: both;
 }
 #supplementary {
-	border-top: 5px solid #3b8e38;
-	background: url(images/footer-bg.jpg) left bottom no-repeat #49af45;
+	border-top: 5px solid #72ae10;
+	background: url(images/footer-bg.jpg) left bottom no-repeat #8fbc46;
 	padding: 15px 20px 15px 20px;
 	max-width: 940px;
 	overflow: hidden;
@@ -2261,8 +2244,8 @@ p.comment-form-comment {
 
 /* Site Generator Line */
 #site-generator {
-	background: #3b8e38;
-	color: #78ca74;
+	background: #72ae10;
+	color: #9dcb52;
 	font-size: 11px;
 	padding: 12px 20px;
 }
@@ -2274,7 +2257,7 @@ p.comment-form-comment {
 	float: right;
 }
 #site-generator a {
-	color: #78ca74;
+	color: #9dcb52;
 	font-weight: normal;
 	text-decoration: none;
 }
@@ -2345,7 +2328,6 @@ a.link-widget-link:hover {
 /* =Responsive Structure
 ----------------------------------------------- */
 @media (max-width: 800px) {
-	.home #primary,
 	#primary {
 		float: none;
 		width: 100%;
@@ -2361,16 +2343,8 @@ a.link-widget-link:hover {
 		float: none;
 		width: 100%;
 	}
-	.home #left-col,
-	.home #right-col {
-		width: 48.75%;
-		float: left;
-		margin: 0;
-	}
-	.home #left-col {
-		margin-right: 2.5%;
-	}
-	
+
+
 	/* Simplify the basic layout */
 	#main #content {
 		width: auto;
@@ -2573,12 +2547,8 @@ a.link-widget-link:hover {
 
 }
 @media (max-width: 630px) {
-	#donate {
-		margin-top: 25px;
-		margin-bottom: 0px;
-	}
-	#join {
-		margin-top: 5px;
+	#back-to-vino {
+		display: none;
 	}
 	#banner-holder, #banner, #divider-below-banner {
 		display: none;
@@ -2593,7 +2563,6 @@ a.link-widget-link:hover {
 		text-align: center;
 	}
 	#site-logo {
-		padding-bottom: 0px;
 		float: none;
 		margin: auto;
 	}
@@ -2619,12 +2588,6 @@ a.link-widget-link:hover {
 	}
 }
 @media (max-width: 450px) {
-	.home #primary,
-	.home #left-col,
-	.home #right-col {
-		width: 100%;
-		margin: 0;
-	}
 	#content .gallery-columns-2 .gallery-item {
 		width: 45%;
 		padding-right: 4%;
@@ -2875,39 +2838,4 @@ a.link-widget-link:hover {
  
 #ie8 section.feature-image.large img { 
 	width: 100%; 
-}
-
-/* CALENDAR WIDGET
----------------------------*/
-/* WIDGET LIST AND PAGE LIST */
-.gce-widget-list a,
-.gce-page-list {
-	color: #2a2a2a;
-}
-.gce-widget-list ul,
-.gce-page-list ul {
-	list-style: none;
-}
-.gce-widget-list ul li,
-.gce-page-list ul li {
-	list-style: none;
-}
-.gce-widget-list .event-title,
-.gce-page-list .event-title {
-	background-color: #FFF !important;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 24px;
-	line-height: 26px;
-}
-.gce-widget-list strong,
-.gce-page-list strong {
-	color: #40a53b;
-}
-.gce-widget-list .event-date,
-.gce-page-list .event-date {
-	font-size: 11px;
-	color: #40a53b;
-}
-ul.gce-list {
-	margin-left: 0px;
 }

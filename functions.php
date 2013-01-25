@@ -148,12 +148,6 @@ function twentyeleven_setup() {
 			'thumbnail_url' => '%s/images/headers/banner-thumbnail.jpg',
 			/* translators: header image description */
 			'description' => __( 'Oletusbanneri', 'twentyeleven' )
-		),
-		'default_banner02' => array(
-			'url' => '%s/images/headers/banner02.jpg',
-			'thumbnail_url' => '%s/images/headers/banner02-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Oletusbanneri 2', 'twentyeleven' )
 		)
 	) );
 }
@@ -337,6 +331,7 @@ function twentyeleven_widgets_init() {
 
 	register_widget( 'Twenty_Eleven_Ephemera_Widget' );
 
+	/*
 	register_sidebar( array(
 		'name' => __( 'Etusivun vasen sivupalkki', 'twentyeleven' ),
 		'id' => 'sidebar-1',
@@ -345,6 +340,7 @@ function twentyeleven_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+	*/
 
 	register_sidebar( array(
 		'name' => __( 'Bannerin vimpaimet', 'twentyeleven' ),
@@ -545,103 +541,6 @@ function twentyeleven_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'twentyeleven_body_classes' );
-
-
-/**
- * Custom contact info
- *
- * @author Jesse Kuoppala / Kallo Works
- * @since 1.0
- */
-
-add_action('admin_menu','add_global_custom_options');
-
-function add_global_custom_options() {
-	add_options_page('Yhteystiedot', 'Yhteystiedot', 'manage_options', 'functions','global_custom_options');
-}
-
-
-function global_custom_options()
-{
-	?>
-<div class="wrap">
-<form method="post" action="options.php">
-<h2>Yhteystiedot</h2>
-<?php wp_nonce_field('update-options') ?>
-			
-<table>
-	<tr>
-		<td valign="top" style="padding-right: 25px;">
-			<h2>Toimisto</h2>
-			<p><strong>Katuosoite:</strong><br />
-			<input type="text" name="streetaddress" size="45" value="<?php echo get_option('streetaddress'); ?>" />
-			</p>
-			<p><strong>Postinumero:</strong><br />
-			<input type="text" name="zipcode" size="45" value="<?php echo get_option('zipcode'); ?>" />
-			</p>
-			<p><strong>Kaupunki:</strong><br />
-			<input type="text" name="city" size="45" value="<?php echo get_option('city'); ?>" />
-			</p>
-			<p><strong>Sähköposti:</strong><br />
-			<input type="text" name="email" size="45" value="<?php echo get_option('email'); ?>" />
-			</p>
-			
-			<h2>Pääsihteeri</h2>
-			<p><strong>Nimi:</strong><br />
-			<input type="text" name="psnimi" size="45" value="<?php echo get_option('psnimi'); ?>" />
-			</p>
-			<p><strong>Puhelin:</strong><br />
-			<input type="text" name="pspuhelin" size="45" value="<?php echo get_option('pspuhelin'); ?>" />
-			</p>
-			<p><strong>Sähköposti:</strong><br />
-			<input type="text" name="psemail" size="45" value="<?php echo get_option('psemail'); ?>" />
-			</p>	
-		</td>
-		<td valign="top" style="padding-right: 25px;">
-			<h2>Puheenjohtajat</h2>
-			
-			<h4>Puheenjohtaja 1</h4>
-			<p><strong>Nimi:</strong><br />
-			<input type="text" name="pjnimi1" size="45" value="<?php echo get_option('pjnimi1'); ?>" />
-			</p>
-			<p><strong>Puhelin:</strong><br />
-			<input type="text" name="pjpuhelin1" size="45" value="<?php echo get_option('pjpuhelin1'); ?>" />
-			</p>
-			<p><strong>Sähköposti:</strong><br />
-			<input type="text" name="pjemail1" size="45" value="<?php echo get_option('pjemail1'); ?>" />
-			</p>
-			
-			<h4>Puheenjohtaja 2</h4>
-			<p><strong>Nimi:</strong><br />
-			<input type="text" name="pjnimi2" size="45" value="<?php echo get_option('pjnimi2'); ?>" />
-			</p>
-			<p><strong>Puhelin:</strong><br />
-			<input type="text" name="pjpuhelin2" size="45" value="<?php echo get_option('pjpuhelin2'); ?>" />
-			</p>
-			<p><strong>Sähköposti:</strong><br />
-			<input type="text" name="pjemail2" size="45" value="<?php echo get_option('pjemail2'); ?>" />
-			</p>
-		</td>
-		<td valign="top">
-			<h2>Avainsanat</h2>
-			<p>Avainsanat auttavat hakukoneita ja ihmisiä löytämään sivustonne.<p>
-			<p>Listatkaa avainsanat pilkulla erotettuna. (esim. vino,vihreät,politiikka)</p>
-			<p>Huom! Avainsanan ei tarvitse olla yksittäinen sana. (esim. "vihreiden nuorten ja opiskelijoiden liitto" voi olla myös yksi avainsana)
-			<p><strong>Avainsanat:</strong><br />
-			<input type="text" name="keywords" size="45" value="<?php echo get_option('keywords'); ?>" />
-			</p>
-		</td>
-	</tr>
-</table>
-
-<p><input type="submit" name="Submit" value="Tallenna" /></p>
-<input type="hidden" name="action" value="update" />
-<input type="hidden" name="page_options" value="streetaddress,zipcode,city,email,pjnimi1,pjpuhelin1,pjemail1,pjnimi2,pjpuhelin2,pjemail2,psnimi,pspuhelin,psemail,keywords" />
-
-</form>
-</div>
-<?php
-}
 
 /**
  * Custom Walker for Top Menu

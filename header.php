@@ -27,7 +27,7 @@
 <meta name="author" content="<?php bloginfo('name'); ?>" />
 <meta name="description" content="<?php bloginfo('description'); ?>" />
 <meta name="keywords" content="<?php echo get_option('keywords'); ?>" />
-<meta property="og:image" content="http://www.vino.fi/wp-content/themes/vino/images/vino-logo.gif"/>
+<meta property="og:image" content="http://www.vino.fi/ronsy/wp-content/themes/ronsy/images/ronsy-logo.png"/>
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
@@ -89,9 +89,9 @@
 	<div id="top-row-content">
 		
 		<div id="in-other-languages">
-			<a href="<?php echo esc_url( home_url( '/' ) );?>in-english">in english</a>
+			<a href="<?php echo esc_url( get_site_url(1) );?>/in-english">in english</a>
 			<span> | </span>
-			<a href="<?php echo esc_url( home_url( '/' ) );?>pa-svenska">på svenska</a>
+			<a href="<?php echo esc_url( get_site_url(1) );?>/pa-svenska">på svenska</a>
 		</div>
 		
 		<div id="top-row-menu">
@@ -110,10 +110,9 @@
 <div id="page-inner">
 	<header id="branding" role="banner">
 			<div id="title">
-				<a id="site-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri();?>/images/vino-logo.gif" alt="<?php echo get_bloginfo('blogname');?>" /></a>
+				<a id="site-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri();?>/images/ronsy-logo.png" alt="<?php echo get_bloginfo('blogname');?>" /></a>
 				
-				<a id="donate" href="<?php echo esc_url( home_url( '/' ) );?>toiminta/lahjoita/" title="Anna lahjoitus"><span>Anna lahjoitus</span></a>
-				<a id="join" href="<?php echo esc_url( home_url( '/' ) );?>toiminta/liity-jaseneksi/" title="Liity jäseneksi"><span>Liity jäseneksi</span></a>
+				<a id="back-to-vino" href="<?php echo esc_url( get_site_url(1) );?>" title="Takaisin ViNOn sivuille"><span>Takaisin ViNOn sivuille</span></a>
 				
 				<div style="clear: both"></div>
 			</div>
@@ -125,14 +124,14 @@
 				<?php /* Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
 				<div class="skip-link"><a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to primary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to primary content', 'twentyeleven' ); ?></a></div>
 				<div class="skip-link"><a class="assistive-text" href="#secondary" title="<?php esc_attr_e( 'Skip to secondary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to secondary content', 'twentyeleven' ); ?></a></div>
-				<a id="home-button" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+				<a id="home-button" href="<?php echo esc_url( get_site_url(1) );?>" title="Vihreiden nuorten ja opiskelijoiden liitto"></a>
 				<?php /* Our navigation menu. If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assigned to the primary location is the one used. If one isn't assigned, the menu with the lowest ID is used. */ ?>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_id' => 'menu-main' ) ); ?>
 				<?php /* Navigation menu for mobile devices */?>
 				<?php wp_nav_menu( array( 
 						'theme_location' => 'primary',
 						'container_id' => 'menu-select',
-						'items_wrap' => '<select id="%1$s" class="%2$s"><option value="'.esc_url( home_url( '/' ) ).'">Etusivu</option>%3$s</select>',
+						'items_wrap' => '<select id="%1$s" class="%2$s">%3$s</select>',
 						'walker' => new Custom_walker_for_responsive()
 						) ); ?>
 				<div style="clear: both"></div>
