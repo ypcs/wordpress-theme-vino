@@ -1,9 +1,23 @@
 /*
-Theme Name: ViNO
-Author: Jesse Kuoppala / Kallo Works
-Author URI: http://www.jessekuoppala.com
-Description: ViNO yhdistykselle räätälöity responsiivinen teema.
-Version: 1.0
+Theme Name: Vihreiden nuorten ja opiskelijoiden liitto ViNO
+Author: Ville Korhonen
+Author URI: http://ypcs.fi
+Description: Vihreiden nuorten ja opiskelijoiden liitto ViNOlle luotu teema.
+Version: 1.5
+Template: twentyeleven
+*/
+
+/*
+TODO: Import ../twentyeleven/style.css
+TODO: Remove duplicate code
+
+Based on Twenty Eleven theme.
+
+Modifications by:
+ - 2012 Jesse Kuoppala / Kallo Works
+  - initial theme for ViNO (clone of Twenty Eleven)
+ - 2013 Ville Korhonen <ville.korhonen@vino.fi>
+  - lots of bugfixes, created better implementations, use hooks instead of hardcoded values etc.
 */
 
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
