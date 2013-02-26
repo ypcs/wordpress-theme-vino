@@ -48,9 +48,6 @@
 		echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
 
 	?></title>
-<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/jquery-1.8.0.min.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/siteactions.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />

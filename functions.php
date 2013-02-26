@@ -435,3 +435,13 @@ add_action( 'admin_menu',  'remove_unnecessary_menus', 999);
 function remove_unnecessary_menus() {
 	remove_menu_page( 'edit-comments.php' );
 }
+
+function vino_styles() {
+	wp_enqueue_style('google-webfonts', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Yanone+Kaffeesatz:400,700', array(), '1.0', 'all');
+}
+add_action('wp_enqueue_scripts', 'vino_styles');
+
+function vino_scripts() {
+	wp_enqueue_script('siteactions', plugins_url('/js/siteactions.js', __FILE__), array('jquery'), '1.0', true);
+}
+add_action('wp_enqueue_scripts', 'vino_scripts');
