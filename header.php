@@ -27,7 +27,6 @@
 <meta name="author" content="<?php bloginfo('name'); ?>" />
 <meta name="description" content="<?php bloginfo('description'); ?>" />
 <meta name="keywords" content="<?php echo get_option('keywords'); ?>" />
-<meta property="og:image" content="http://www.vino.fi/wp-content/themes/vino/images/vino-logo.gif"/>
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
