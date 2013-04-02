@@ -450,3 +450,12 @@ function vino_favicon() { ?>
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.png"/>
 <?php }
 add_action('wp_head', 'vino_favicon');
+
+function vino_imagesizes() {
+	add_image_size('Avatar', 50, 50, false);
+	add_image_size('Avatar (cropped)', 50, 50, true);
+}
+
+if (function_exists('add_image_size')) {
+	vino_imagesizes();
+}
