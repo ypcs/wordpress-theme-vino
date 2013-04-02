@@ -25,7 +25,7 @@
 		</div><!-- .entry-summary -->
 		<?php else : ?>
 		<div class="entry-content">
-			<img src="<?php echo get_template_directory_uri();?>/images/quotation-mark.png" alt="" style="float: left; margin: 4px 10px 0 0;" />
+			<img src="<?php echo get_stylesheet_directory_uri();?>/images/quotation-mark.png" alt="" style="float: left; margin: 4px 10px 0 0;" />
 			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
 		</div><!-- .entry-content -->
