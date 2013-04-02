@@ -442,7 +442,7 @@ function vino_styles() {
 add_action('wp_enqueue_scripts', 'vino_styles');
 
 function vino_scripts() {
-	wp_enqueue_script('siteactions', plugins_url('/js/siteactions.js', __FILE__), array('jquery'), '1.0', true);
+	wp_enqueue_script('siteactions', get_stylesheet_directory_uri() . '/js/siteactions.js', array('jquery'), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'vino_scripts');
 
