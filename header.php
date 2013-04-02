@@ -96,7 +96,7 @@
 <div id="page-inner">
 	<header id="branding" role="banner">
 			<div id="title">
-				<a id="site-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri();?>/images/vino-logo.gif" alt="<?php echo get_bloginfo('blogname');?>" /></a>
+				<a id="site-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri();?>/images/vino-logo.gif" alt="<?php echo get_bloginfo('blogname');?>" /></a>
 				
 				<a id="donate" href="<?php echo esc_url( home_url( '/' ) );?>toiminta/lahjoita/" title="Anna lahjoitus"><span>Anna lahjoitus</span></a>
 				<a id="join" href="<?php echo esc_url( home_url( '/' ) );?>toiminta/liity-jaseneksi/" title="Liity jäseneksi"><span>Liity jäseneksi</span></a>
