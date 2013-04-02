@@ -437,7 +437,7 @@ function remove_unnecessary_menus() {
 }
 
 function vino_styles() {
-	wp_enqueue_style('google-webfonts', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Yanone+Kaffeesatz:400,700', array(), '1.0', 'all');
+	wp_enqueue_style('google-webfonts', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Yanone+Kaffeesatz:400,700', array(), '1.0', 'all');
 }
 add_action('wp_enqueue_scripts', 'vino_styles');
 
